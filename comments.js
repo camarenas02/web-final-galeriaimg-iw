@@ -5,12 +5,12 @@ import { ref as dbRef, push, get } from "https://www.gstatic.com/firebasejs/9.0.
 export function loadComments(imageId, commentsContainer) {
     const commentsRef = dbRef(db, `images/${imageId}/comments`);
 
-    // Limpiar contenedor
+    
     commentsContainer.innerHTML = "<p>Cargando comentarios...</p>";
 
     get(commentsRef)
         .then(snapshot => {
-            commentsContainer.innerHTML = ""; // Limpiar antes de mostrar comentarios
+            commentsContainer.innerHTML = ""; 
             if (snapshot.exists()) {
                 snapshot.forEach(childSnapshot => {
                     const comment = childSnapshot.val();
