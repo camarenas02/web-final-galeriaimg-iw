@@ -18,7 +18,7 @@ window.searchImages = () => {
 
     get(imagesRef)
         .then(snapshot => {
-            gallery.innerHTML = ""; // Limpiar la galería antes de mostrar resultados
+            gallery.innerHTML = ""; 
             let found = false;
 
             snapshot.forEach(childSnapshot => {
