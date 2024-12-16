@@ -4,7 +4,7 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-d
 import { getAuth } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
 
-// Configuración de Firebase (usa tus credenciales)
+// Configuración de Firebase 
 const firebaseConfig = {
     apiKey: "AIzaSyDh0WvGvQ9MCG5hdwTVNP91BMmOTL3LNkc",
     authDomain: "actividad-final-iw.firebaseapp.com",
