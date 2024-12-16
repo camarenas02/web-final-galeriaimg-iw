@@ -51,7 +51,7 @@
 
         get(imagesRef)
             .then(snapshot => {
-                gallery.innerHTML = ""; // Limpiar la galería
+                gallery.innerHTML = ""; 
                 snapshot.forEach(childSnapshot => {
                     const data = childSnapshot.val();
                     const imageId = childSnapshot.key;
